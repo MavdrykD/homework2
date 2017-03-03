@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;homework2.Adults&apos; to &apos;Adult&apos;&#x0D;&#x0A;- Original project: &apos;HomeworkJavaCore&apos;&#x0D;&#x0A;- Original element: &apos;homework2.Adults&apos;&#x0D;&#x0A;- Renamed element: &apos;homework2.Adult&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Adults&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;homework2{Adults.java[Adults" matchStrategy="1" name="Adult" qualified="false" references="true" similarDeclarations="false" stamp="1488481389344" textual="false" version="1.0"/>
+</session>
