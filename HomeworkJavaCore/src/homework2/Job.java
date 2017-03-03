@@ -1,10 +1,11 @@
 package homework2;
 
-public class Job {
+public class Job{
 	private String name;
 	private int payment;
 	
 	public Job(String name, int payment) {
+		super();
 		this.name = name;
 		this.payment = payment;
 	}

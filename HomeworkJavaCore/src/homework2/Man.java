@@ -1,50 +1,26 @@
 package homework2;
 
-public class Man {
-	private String name;
-	private int money;
-	private Job job;
+public class Man extends Adult{
+
 	private Gold [] golds = new Gold[3];
 	
 	
-	public Man(String name, int money) {
-		this.name = name;
-		this.money = money;
-	}
-	
-	public String getName() {
-		return name;
-	}
 
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public int getMoney() {
-		return money;
-	}
-
-	public void setMoney(int money) {
-		this.money = money;
+	public Man(String name, int age) {
+		super(name, age);
 	}
 	
-	public Job getJob() {	
-		return job;
-	}
 	
-	public void setJob(Job job) {
-		money = job.getPayment() + money;
-		this.job = job;
-	}
 	
-	public Gold[] getGold() {
+	
+	public Gold[] getGolds() {
 		return golds;
 	}
-	
+
 	public void setGold(Gold gold) {
-		
-		if(money > gold.getPrice()){
-			money = money - gold.getPrice();
+		int myMoney = getMoney();
+		if(myMoney > gold.getPrice()){
+			myMoney = myMoney - gold.getPrice();
 			for (int i = 0; i < golds.length; i++) {
 				if(golds[i] == null){
 					golds[i] = gold;
@@ -54,7 +30,9 @@ public class Man {
 		}else{
 			System.out.println("You got no money");
 		}
+		setMoney(myMoney);
 	}
+
 	public void buyAGold(Gold gold){
 		setGold(gold);
 	}
@@ -68,4 +46,6 @@ public class Man {
 			}
 		}
 	}
+	
+	
 }

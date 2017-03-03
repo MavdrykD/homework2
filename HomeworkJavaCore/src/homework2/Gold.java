@@ -1,6 +1,6 @@
 package homework2;
 
-public class Gold {
+public class Gold{
 	private int price;
 	private String name;
 	

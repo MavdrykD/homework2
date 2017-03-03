@@ -1,26 +1,12 @@
 package homework2;
 
-public class Woman {
-	private Job job;
-	private String name;
+public class Woman extends Adult{
 	private Gold[] golds = new Gold [3];
 	
+	public Woman(String name, int age) {
+		super(name, age);
+	}
 	
-	public Woman(String name) {
-		this.name = name;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public Job getJob() {
-		return job;
-	}
-	public void setJob(Job job) {
-		this.job = job;
-	}
 	public Gold[] getGolds() {
 		return golds;
 	}
@@ -40,6 +26,7 @@ public class Woman {
 	}
 	
 	public void seeGold(){
+		System.out.println();
 		System.out.print(getName()+" has: " );
 		for (int i = 0; i < golds.length; i++) {
 			if(golds[i] != null){

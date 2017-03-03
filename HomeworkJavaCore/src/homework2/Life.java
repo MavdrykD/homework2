@@ -6,9 +6,9 @@ public class Life {
 	
 	public void date(Woman woman, Man man, Gold gift){
 		if(woman.setGolds(gift)){
-			for (int i = 0; i < man.getGold().length; i++) {
-				if(man.getGold()[i] == gift){
-					man.getGold()[i] = null;
+			for (int i = 0; i < man.getGolds().length; i++) {
+				if(man.getGolds()[i] == gift){
+					man.getGolds()[i] = null;
 					break;
 				}
 			}
@@ -19,6 +19,7 @@ public class Life {
 		
 		man.setJob(job);
 		man.setMoney(job.getPayment() + man.getMoney());
+		System.out.println("sldgh zhg hzdfg hk gdsfg ");
 	}
 	
 	
