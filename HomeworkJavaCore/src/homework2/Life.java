@@ -19,7 +19,11 @@ public class Life {
 		
 		man.setJob(job);
 		man.setMoney(job.getPayment() + man.getMoney());
-		System.out.println("sldgh zhg hzdfg hk gdsfg ");
+	}
+	
+	public void doWedding(){
+		
+		
 	}
 	
 	
