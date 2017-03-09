@@ -8,14 +8,12 @@ import com.sun.org.apache.xalan.internal.xsltc.compiler.sym;
 public class Main {
 
 	public static void main(String[] args) {
-		String mystring = new String("2d,fg2 34 hfj,g47j 234h 38");
+		String mystring = new String("2d,fg24 34 hfj,g47j 234h 38");
 		char myString2 = '-';
 		int maxNumber = 0;
 		for (int i = 0; i < mystring.length(); i++) {
 			if(mystring.codePointAt(i) < 48 || mystring.codePointAt(i) > 57){
 				mystring = mystring.replace(mystring.charAt(i), myString2);
-			
-				
 			}
 		}
 		String [] mass = mystring.split("-");
